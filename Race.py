@@ -2,9 +2,10 @@ import random, time, os
 
 class Race:
 
-    def __init__(self, length):
+    def __init__(self, length, speed):
         self.trackLength = length
         self.raceRunning = True
+        self.speed = speed
         self.cars = {
             'bodies': [],
             'names': [],
@@ -36,7 +37,7 @@ class Race:
                     self.killGame()
 
             print(winMsg)
-            time.sleep(0.1)
+            time.sleep(self.speed / 10)
 
 
 
