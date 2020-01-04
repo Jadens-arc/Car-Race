@@ -22,7 +22,7 @@ class Race:
         winMsg = ''
         while self.raceRunning == True:
             selectedCar = self.cars['names'].index(random.choice(self.cars['names']))
-            self.cars['bodies'][selectedCar] = ('=' * random.randint(1, 3)) + self.cars['bodies'][selectedCar]
+            self.cars['bodies'][selectedCar] = ('█' * random.randint(1, 3)) + self.cars['bodies'][selectedCar]
             os.system('clear')
 
             for car in self.cars['names']:
