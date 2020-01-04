@@ -15,5 +15,5 @@ from Race import Race
 formula1 = Race(100, 1)
 formula1.addCar('McLaren')
 formula1.addCar('Renault')
-myRace.start()
+formula1.start()
 ```
